@@ -19,9 +19,7 @@
     "build": "rollup --config rollup.config.mjs",
     "prepublishOnly": "npm run build",
     "test": "npm run lint && npm run build && npm run tap",
-    "tap": "tap --no-esm --node-arg=--experimental-modules test/test-*{.js,.mjs}",
-    "coverage": "npm run tap -- --coverage",
-    "coverage-html": "npm run tap -- --coverage-report=html",
+    "tap": "c8 tap --no-coverage --no-esm --node-arg=--experimental-modules test/test-*{.js,.mjs}",
     "lint": "eslint lib/* test/* examples/*"
   },
   "contributors": [
@@ -42,6 +40,7 @@
     "osc-min": "^1.1.1"
   },
   "devDependencies": {
+    "c8": "^6.0.1",
     "eslint": "^6.0.1",
     "rollup": "^1.27.9",
     "tap": "^14.6.1"
