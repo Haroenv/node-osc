@@ -4,8 +4,8 @@
   "version": "5.0.0-beta.0",
   "main": "./dist/bundle.js",
   "exports": {
-    "default": "./lib/index.mjs",
-    "require": "./dist/bundle.js"
+    "require": "./dist/bundle.js",
+    "default": "./lib/index.mjs"
   },
   "author": {
     "name": "Myles Borins",
