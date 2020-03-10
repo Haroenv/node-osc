@@ -5,7 +5,7 @@ A very basic [Open Sound Control](http://opensoundcontrol.org/introduction-osc) 
 Install using npm
 
 ```
-npm install node-osc
+npm install node-osc@beta
 ```
 
 ## ⚠️ Experimental ⚠️
